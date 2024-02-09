@@ -2,8 +2,9 @@
 ---
 # Example iPhone 12 Pro running the website:
 ![Example iPhone 12 Pro running the website](iphone-12-pro-example-website.png)
+
 ---
-### How to deploy updates:`npm run deploy -- -m "Deploy React app to GitHub Pages"`
+### How to deploy updates: `npm run deploy -- -m "Deploy React app to GitHub Pages"`
 ---
 
 # Getting Started with Create React App
