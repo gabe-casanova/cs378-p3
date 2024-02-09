@@ -1,8 +1,108 @@
-/* 
-  Style your elements by creating CSS classes here.
-  Below, you can see an example of a class called "menu" that changes the color of the text to blue. Modify according to your needs.
-*/
+body {
+  background-color: #ffefb7;
+  font-size: 20px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
-.menu {
-  color: blue;
+#logo {
+  display: block;
+  width: 35%;
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#header {
+  /* Shiba's Kitchen */
+  display: block;
+  text-align: center;
+  color: #d99641;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 30px;
+  line-height: 1;
+  letter-spacing: 2.75px;
+  padding-top: 5px;
+}
+
+#header span {
+  /* "Where Bark Meets Bite!" */
+  display: block;
+  margin-top: 5px;
+  font-size: 20px;
+  letter-spacing: 0.01px;
+  font-family: monospace;
+}
+
+#subheader {
+  /* 2316 Guadalupe St, Austin, TX */
+  display: block;
+  text-align: center;
+  font-size: medium;
+  font-weight: 200;
+  letter-spacing: 0.25px;
+  padding-top: 13.5px;
+  padding-bottom: 45px;
+}
+
+.menu-container {
+  margin-left: 25px;
+}
+
+.menu-entry {
+  display: flex;
+  padding-bottom: 23px;
+}
+
+.food-image {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  border-radius: 16px;
+  border: 2.5px solid #050504;
+}
+
+.description-container {
+  padding-top: 12px;
+  padding-left: 14px;
+  padding-right: 10px;
+  display: inline;
+  flex-grow: 1;  /* Take up all available space */
+}
+
+.food-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.food-info {
+  font-size: 15px;
+  color: #3a3a3a;
+  padding-top: 7px;
+  line-height: 1.2;
+  padding-left: 2.5px;
+}
+
+.buttonRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-size: medium;
+  color: #1c1c1c;
+  font-weight: bold;
+  padding-top: 9px;
+}
+
+.addButton {
+  font-size: small;
+  background-color: #e7b876;
+  margin-right: 25px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 50px;
 }
