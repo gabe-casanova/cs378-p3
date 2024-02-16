@@ -1,12 +1,3 @@
-# https://gabe-casanova.github.io/cs378-p2/
----
-# Example iPhone 12 Pro running the website:
-![Example iPhone 12 Pro running the website](iphone-12-pro-example-website.png)
-
----
-### How to deploy updates: `npm run deploy -- -m "Deploy React app to GitHub Pages"`
----
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

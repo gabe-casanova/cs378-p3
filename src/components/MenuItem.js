@@ -1,9 +1,8 @@
 const MenuItem = ({ item }) => {
-  const { title, description, imageName, price } = item;
-  const imagePath = `images/${imageName}`;
+  const { title, description, image_src, price } = item;
   return (
     <div className="menu-entry">
-      <img className="food-image" src={imagePath} />
+      <img className="food-image" src={image_src} />
       <div className="description-container">
         <div className="food-name">{title}</div>
         <div className="food-info">{description}</div>
