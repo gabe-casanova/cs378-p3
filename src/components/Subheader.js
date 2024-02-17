@@ -1,5 +1,5 @@
 const Subheader = () => {
-  return <div id="subheader">2316 Guadalupe St, Austin, TX</div>;
+  return <div id="subheader">• Family Owned & Operated •</div>
 };
 
 export default Subheader;
