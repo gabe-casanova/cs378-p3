@@ -4,11 +4,17 @@ const MenuItem = ({ item }) => {
     <div className="menu-entry">
       <img className="food-image" src={image_src} />
       <div className="description-container">
-        <div className="food-name">{title}</div>
+        <div className="name-price-row">
+          <span className="food-name">{title}</span>
+          <span className="price">${price}</span>
+        </div>
         <div className="food-info">{description}</div>
-        <div className="buttonRow">
-          <div className="price">${price}</div>
-          <button className="addButton">add</button>
+        <div className="button-row">
+          <button className="button">-</button>
+          <span id="num-ordered">0</span>
+          <button id="add-button" className="button">
+            +
+          </button>
         </div>
       </div>
     </div>
