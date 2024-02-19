@@ -117,7 +117,7 @@ body {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  margin: 0 5px;
+  margin: 0 5.5px;
 }
 
 .checkout-bar {
@@ -125,9 +125,9 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #ffe1c6;
+  background-color: #c2e1ff;
   padding: 15px 35px;
-  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.15);
+  padding-bottom: 25px;
   display: flex;
   align-items: center;
   .spacer {
@@ -136,14 +136,11 @@ body {
 }
 
 .checkout-bar button {
-  background-color: #ffcda2;
+  background-color: #f8ba4b;
   text-align: center;
   font-size: medium;
   border-radius: 10px;
   padding: 2px 7px;
   margin-right: 12px;
-}
-
-#clear-all-button {
-  margin-right: 60px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
