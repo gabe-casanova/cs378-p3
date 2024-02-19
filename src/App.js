@@ -5,6 +5,7 @@ import MenuItem from "./components/MenuItem";
 import Logo from "./components/Logo";
 import Header from "./components/Header";
 import Subheader from "./components/Subheader";
+import CheckoutBar from "./components/CheckoutBar";
 
 // import menu data
 import menuInfo from "./data/MenuInfo";
@@ -20,6 +21,7 @@ function App() {
           <MenuItem key={item.id} item={item} />
         ))}
       </div>
+      <CheckoutBar />
     </div>
   );
 }

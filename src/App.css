@@ -40,17 +40,17 @@ body {
 
 #subheader {
   display: block;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
-  font-size: large;
-  font-weight: 600;
-  padding-top: 13.5px;
-  padding-bottom: 45px;
-  letter-spacing: 2px;
+  font-size: 16.75px;
+  font-weight: 300;
+  padding-top: 13px;
+  letter-spacing: 0.5px;
 }
 
 .menu-container {
+  padding-top: 35px;
   margin-left: 25px;
+  margin-bottom: 55px;
 }
 
 .menu-entry {
@@ -66,7 +66,7 @@ body {
   border: 2.5px solid #050504;
 }
 
-.description-container {
+.food-info-container {
   padding-top: 10px;
   padding-left: 10px;
   padding-right: 10px;
@@ -85,33 +85,34 @@ body {
   padding-right: 20px;
 }
 
-.food-info {
+.food-caption {
   font-size: 15px;
   color: #3a3a3a;
   line-height: 1.75;
   padding-left: 1.5px;
 }
 
-.button-row {
+.quantity-selector-container {
   display: flex;
   justify-content: flex-end;
   font-size: medium;
   font-weight: bold;
   margin-top: 5px;
+  margin-right: 17.5px;
 }
 
-.button {
+.quantity-selector-container button {
   background-color: #aad7ff;
   text-align: center;
-  height: 25px;
-  width: 25px;
+  height: 22px;
+  width: 22px;
   border-radius: 50%;
   display: inline-flex;
   justify-content: center;
   align-items: center;
 }
 
-#num-ordered {
+#quantity-ordered {
   width: 20px;
   display: inline-flex;
   justify-content: center;
@@ -119,6 +120,30 @@ body {
   margin: 0 5px;
 }
 
-#add-button {
-  margin-right: 10px;
+.checkout-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffe1c6;
+  padding: 15px 35px;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  .spacer {
+    flex-grow: 1;
+  }
+}
+
+.checkout-bar button {
+  background-color: #ffcda2;
+  text-align: center;
+  font-size: medium;
+  border-radius: 10px;
+  padding: 2px 7px;
+  margin-right: 12px;
+}
+
+#clear-all-button {
+  margin-right: 60px;
 }
