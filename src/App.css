@@ -135,12 +135,62 @@ body {
   }
 }
 
-.checkout-bar button {
-  background-color: #f8ba4b;
+.button-style {
   text-align: center;
   font-size: medium;
   border-radius: 10px;
   padding: 2px 7px;
   margin-right: 12px;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.checkout-bar button {
+  background-color: #f8ba4b;
+}
+
+.alert {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fefdf9;
+  padding: 30px 20px;
+  width: 60%;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  flex-direction: column;
+  text-align: center;
+}
+
+.alert-text {
+  font-size: x-large;
+}
+
+.alert-header {
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.alert-subtotal {
+  font-size: 22.5px;
+  padding-bottom: 7.5px;
+  span {
+    font-size: 0.9em;
+    color: #4165d9;
+  }
+}
+
+.ordered-item {
+  font-size: 23.5px;
+  span {
+    font-size: 0.8em;
+    color: #6a6a6a;
+  }
+}
+
+.alert button {
+  background-color: #4165d9;
+  color: white;
+  font-size: large;
+  margin-top: 15px;
 }

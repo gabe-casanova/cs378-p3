@@ -14,7 +14,8 @@ import menuInfo from "./data/MenuInfo";
 function App() {
   const [subtotal, setSubtotal] = useState(0);
   const [cart, setCart] = useState([]);
-  // const [quantitySelectors, setQuantitySelectors] = useState([]);
+  const [shouldReset, setShouldReset] = useState(false); // keeps track if we need to reset: subtotal, cart, quantitySelectors
+  const [buttonsDisabled, setButtonsDisabled] = useState(false); // keeps track if the main buttons should be clickable, based on if Alert is currently showing
 
   const updateSubtotal = (amount) => {
     setSubtotal(subtotal + amount);
@@ -44,15 +45,11 @@ function App() {
     }
   };
 
-  // const addQuantitySelector = (selector) => {
-  //   setQuantitySelectors([...quantitySelectors, selector]);
-  // };
-
-  // const reset = () => {
-  //   setSubtotal(0);
-  //   setCart([]);
-  //   quantitySelectors.forEach((selector) => selector.setNumOrdered(0));
-  // };
+  const reset = () => {
+    setSubtotal(0);
+    setCart([]);
+    setShouldReset(true);
+  };
 
   return (
     <div>
@@ -66,10 +63,19 @@ function App() {
             item={item}
             updateSubtotal={updateSubtotal}
             updateCart={updateCart}
+            shouldReset={shouldReset}
+            setShouldReset={setShouldReset}
+            buttonsDisabled={buttonsDisabled}
           />
         ))}
       </div>
-      <CheckoutBar subtotal={subtotal} cart={cart} />
+      <CheckoutBar
+        subtotal={subtotal}
+        cart={cart}
+        handleClearAll={reset}
+        buttonsDisabled={buttonsDisabled}
+        setButtonsDisabled={setButtonsDisabled}
+      />
     </div>
   );
 }

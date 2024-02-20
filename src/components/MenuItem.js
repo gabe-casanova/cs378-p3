@@ -1,7 +1,14 @@
 import React from "react";
 import QuantitySelector from "./QuantitySelector";
 
-const MenuItem = ({ item, updateSubtotal, updateCart }) => {
+const MenuItem = ({
+  item,
+  updateSubtotal,
+  updateCart,
+  shouldReset,
+  setShouldReset,
+  buttonsDisabled,
+}) => {
   const { title, description, image_src, price } = item;
   return (
     <div className="menu-entry">
@@ -16,6 +23,9 @@ const MenuItem = ({ item, updateSubtotal, updateCart }) => {
           updateSubtotal={updateSubtotal}
           updateCart={updateCart}
           item={item}
+          shouldReset={shouldReset}
+          setShouldReset={setShouldReset}
+          buttonsDisabled={buttonsDisabled}
         />
       </div>
     </div>

@@ -1,8 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
-const QuantitySelector = ({ updateSubtotal, updateCart, item }) => {
+const QuantitySelector = ({
+  updateSubtotal,
+  updateCart,
+  item,
+  shouldReset,
+  setShouldReset,
+  buttonsDisabled,
+}) => {
   // locally store each QuantitySelector's item counter
   const [numOrdered, setNumOrdered] = useState(0);
+
+  useEffect(() => {
+    if (shouldReset) {
+      setNumOrdered(0);
+      setShouldReset(false);
+    }
+  }, [shouldReset, setShouldReset]);
 
   const updateCount = (amount) => {
     const newCount = numOrdered + amount;
@@ -15,9 +29,13 @@ const QuantitySelector = ({ updateSubtotal, updateCart, item }) => {
 
   return (
     <div className="quantity-selector-container">
-      <button onClick={() => updateCount(-1)}>-</button>
+      <button disabled={buttonsDisabled} onClick={() => updateCount(-1)}>
+        -
+      </button>
       <span id="quantity-ordered">{numOrdered}</span>
-      <button onClick={() => updateCount(1)}>+</button>
+      <button disabled={buttonsDisabled} onClick={() => updateCount(1)}>
+        +
+      </button>
     </div>
   );
 };
