@@ -1,7 +1,7 @@
 # https://gabe-casanova.github.io/cs378-p3/
 ---
 # Example iPhone 14 Pro running the website:
-![Example iPhone 14 Pro running the website](iphone-12-pro-example-website.jpeg)
+![Example iPhone 14 Pro running the website](iphone-14-pro-example-website.jpeg)
 
 ---
 ### How to deploy updates: `npm run deploy -- -m "Deploy React app to GitHub Pages"`
