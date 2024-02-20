@@ -102,7 +102,7 @@ body {
 }
 
 .quantity-selector-container button {
-  background-color: #aad7ff;
+  background-color: #a9d4ff;
   text-align: center;
   height: 22px;
   width: 22px;
@@ -127,7 +127,6 @@ body {
   width: 100%;
   background-color: #c2e1ff;
   padding: 15px 35px;
-  padding-bottom: 25px;
   display: flex;
   align-items: center;
   .spacer {
